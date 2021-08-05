@@ -18,7 +18,7 @@ namespace Adapter.Task1
 
         public int Count => GetElementsCount();
 
-        public int GetElementsCount()
+        private int GetElementsCount()
         {
             int result = 0;
             using (IEnumerator<T> enumerator = elements.GetElements().GetEnumerator())
